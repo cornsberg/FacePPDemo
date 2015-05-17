@@ -1,0 +1,73 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>	
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1" />
+	<meta name="viewport" content="width=device-width" initial-scale="1" />
+	<meta http-equiv="Access-Control-Allow-Origin" content="https://apicn.faceplusplus.com" />
+
+	<title>Face Demo</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/page.css">
+	<link rel="stylesheet" type="text/css" href="css/face.css">
+</head>
+<body>
+	<div id="areaSetting" class="area actived">
+		<h2 class="title">Setting for Face Source</h2>
+		<div class="desp">
+			<p>Here, you can set URL or upload an image file as your face souce.</p>
+			<p>The way of uploading a file is available in <em>an advanced browser</em>(Chrome, FF, IE10+...), for  File Object/FormData/Blob in HTML5. </p>
+			<p>There is no validation while filling the form, Cautious and be Trusty.</p>
+		</div>
+
+		<div class="form">
+			<form id="fmFace">
+				<div class="form-group form-inline">					
+					<label class="form_label">Source Type:</label>
+					<div class="radio">
+						<label for="rdoSorceType">
+							<input type="radio" name="sorceType" id="rdoURL" data-stype="url" checked="checked">
+							URL
+						</label>
+					</div>
+					<div class="radio">
+						<label for="rdoSorceType">
+							<input type="radio" name="sorceType" id="rdoFile" data-stype="image">
+						</label>
+						File
+					</div>
+				</div>				
+				<div class="form-group form-inline">
+					<label class="form_label">Face Data:</label>
+					<input type="text" id="txtFaceURL" class="form-control"/>
+					<input type="file" accept="image/*" id="fileFaceImage" />
+				</div>
+				<div class="form-group form-inline opet">
+					<label class="form_label">&nbsp;</label>
+					<button class="btn" id="btnSubmitSetting">Submit</button>
+				</div>	
+			</form>	
+				
+		</div>
+	</div>
+	<div id="areaShowing" class="area">
+		<div id="topHeader">
+			<a href="javascript:void(0);" hidefocus="hidefocus" id="lnkBackToSetting">
+				&lt;&lt;Reset the Face Setting
+			</a>
+		</div>
+		<div id="faceDemo" class="f_detect">		
+			<img alt="sample image for detection" src="#"/>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="facepp-sdk.min.js"></script>
+	<script type="text/javascript" src="js/FileHandler.js"></script>
+	<script type="text/javascript" src="js/FaceAPI.js"></script>
+	<script type="text/javascript" src="js/FaceSetter.js"></script>
+	<script type="text/javascript" src="js/FaceHelper.js"></script>
+	<script type="text/javascript" src="js/page.js"></script>
+</script>
+</body>
+</html>

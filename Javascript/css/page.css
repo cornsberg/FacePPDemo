@@ -1,0 +1,80 @@
+body{
+	background-color: #F1F4F5;
+	font-size: 16px;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.area{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 20px 30px;
+	display: none;
+}
+
+.area.actived{
+	display: block;
+}
+
+h2.title{
+	margin: 10px;
+	padding: 5px 10px;
+	border-left: solid 4px #FFB900;
+
+	color: #FFC222;
+}
+
+.desp, .form{
+	margin: 30px;
+}
+
+.desp p{
+	line-height: 30px;
+}
+.desp p em{
+	color: #f00;
+	font-style: normal;
+}
+
+#fmFace label.form_label{
+	color: #999;
+	white-space: nowrap;
+	width: 110px;
+	text-align: right;
+	margin-right: 8px;
+}
+
+.form .btn{
+	background-color: #FFC222;
+	color: #fff;
+}
+
+
+#fmFace .radio{
+	margin-right: 15px;
+}
+
+#txtFaceURL{
+	width: 400px;
+}
+
+#fileFaceImage{
+	display: none;
+}
+
+#lnkBackToSetting{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.undone_tip{
+	font-size: 0.9em;
+	margin-top: 5px;
+	color: #666;
+}
+
+.error{
+	color: #f00;
+}
